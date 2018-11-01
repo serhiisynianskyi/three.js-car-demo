@@ -1,0 +1,66 @@
+{
+	"gameSceneSize": {
+		"planeSize": {
+			"depth": 2000,
+			"width": 2000,
+			"height": 10
+		},
+		"edges": {
+			"depth": 20,
+			"height": 20
+		}
+	},
+	"garageSize": {
+		"size": {
+			"depth": 400,
+			"width": 400,
+			"height": 200
+		},
+		"wallWidth": 20
+	},
+	"carControls": {
+		"currentSpeed": 0,
+		"currentAcceleration": 0,
+		"maxForwardSpeed": 0.3,
+		"maxBackwardSpeed": 0.2,
+		"acceleration": 0.004,
+		"deceleration": 0.004,
+		"turnDegree": 0
+	},
+	"objectsUrls": [
+		"../../model/Avent_sport.obj",
+		"../../model/wheel.obj"
+	],
+	"wheelsPosition": [
+		{
+			"position": [
+				0,
+				-6,
+				-27
+			]
+		},
+		{
+			"position": [
+				153,
+				-6,
+				-27
+			]
+		},
+		{
+			"position": [
+				0,
+				-6,
+				80
+			],
+			"rotationAngle": 180
+		},
+		{
+			"position": [
+				153,
+				-6,
+				80
+			],
+			"rotationAngle": 180
+		}
+	]
+}

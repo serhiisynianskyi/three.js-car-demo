@@ -1,0 +1,119 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}
+
+html,
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	background-color: black;
+}
+
+.main-wrapper {
+	position: relative;
+}
+
+.modes-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.mode-button,
+.restart {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	margin: 30px;
+	border-radius: 50%;
+	background: #555555;
+	opacity: 0.2;
+}
+
+.mode-button:after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font: 700 20px / 1.2 Arial;
+	color: #ffffff;
+}
+
+.mode-button.active {
+	opacity: 0.9;
+}
+
+.first-mode:after {
+	content: '2D';
+}
+
+.second-mode:after {
+	content: '3D';
+}
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.3);
+	display: none;
+}
+
+.overlay p {
+	display: none;
+	flex-grow: 1;
+	width: 100%;
+	margin: 10px;
+	text-align: center;
+	font: 700 80px / 1.2 Arial;
+	text-transform: uppercase;
+}
+
+.overlay .win-text {
+	color: #00ff00;
+}
+
+.overlay .lose-text {
+	color: #ff0000;
+}
+
+.restart {
+	width: 100px;
+	height: 100px;
+	font: 700 20px / 1.2 Arial;
+	color: #ffffff;
+	opacity: 1;
+}
+
+.defeat .overlay,
+.win .overlay {
+	display: flex;
+}
+
+.defeat .lose-text,
+.win .win-text{
+	display: block;
+}

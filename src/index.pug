@@ -1,0 +1,16 @@
+doctype html
+html(lang='en')
+	head
+		title Car demo
+		meta(name='description', content='Car demo')
+		meta(name='author', content='Serhii Synianskyi')
+		meta(charset='UTF-8', name='viewport', content='width=device-width, initial-scale=0.85, maximum-scale=0.85, user-scalable=0, minimal-ui')
+	body
+		.main-wrapper
+			.modes-wrapper
+				button.mode-button.first-mode.active(data-mode='mode-2d')
+				button.mode-button.second-mode(data-mode='mode-3d')
+			.overlay
+				p.win-text You win
+				p.lose-text You lose
+				button.restart Restart
